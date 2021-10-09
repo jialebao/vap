@@ -95,6 +95,7 @@ NSInteger const VapMaxCompatibleVersion = 2;
     }
     if (self.hwd_metalView) {
         [self.hwd_metalView dispose];
+        self.hwd_metalView = nil;
     }
     if (self.vap_metalView) {
         [self.vap_metalView dispose];
