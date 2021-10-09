@@ -117,6 +117,8 @@
  资源回收
  */
 - (void)dispose {
+    UIImage *img = [[UIImage alloc]init];
+    self.metalLayer.contents = (__bridge id)img.CGImage;
     [self.renderer dispose];
 }
 
